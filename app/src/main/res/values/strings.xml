@@ -6,4 +6,7 @@
     <string name="phone_no">650-555-5555</string>
     <string name="web">www.udacity.com</string>
     <string name="button">Free Trial</string>
+    <string name="des_button">Top right side of app has a button saying Free Trial"</string>
+    <string name="image">An image on top saying world class nanodegree programs. Master in demand skills. Followed by a Udacity Logo</string>
+    <string name="telephone_no">telephone number 650-5555-555</string>
 </resources>

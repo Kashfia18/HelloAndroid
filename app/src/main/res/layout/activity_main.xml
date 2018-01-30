@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
     android:background="@drawable/background"
     tools:context="com.example.android.helloandroid.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:focusable="true">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,18 +22,21 @@
             android:padding="@dimen/buttonpadding_size"
             android:text="@string/button"
             android:textSize="@dimen/buttonfont_size"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:contentDescription="@string/des_button"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:focusable="true">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
-                android:src="@drawable/udacityindex" />
+                android:src="@drawable/udacityindex"
+                android:contentDescription="@string/image"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -43,7 +47,8 @@
                 android:text="@string/Udacity_text"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/font_size"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:contentDescription="@string/Udacity_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -53,7 +58,8 @@
                 android:paddingTop="@dimen/textview_paddingTop"
                 android:text="@string/address1"
                 android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/font_size" />
+                android:textSize="@dimen/font_size"
+                android:contentDescription="@string/address1"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -62,7 +68,8 @@
                 android:fontFamily="@font/roboto"
                 android:text="@string/address2"
                 android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/font_size" />
+                android:textSize="@dimen/font_size"
+                android:contentDescription="@string/address2"/>
 
             <TextView
                 android:id="@+id/phoneno_view"
@@ -74,7 +81,8 @@
                 android:padding="@dimen/textview_minutepadding"
                 android:text="@string/phone_no"
                 android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/font_size" />
+                android:textSize="@dimen/font_size"
+                android:contentDescription="@string/telephone_no" />
 
             <TextView
                 android:id="@+id/web_view"
@@ -85,7 +93,8 @@
                 android:fontFamily="@font/roboto"
                 android:text="@string/web"
                 android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/webfont_size" />
+                android:textSize="@dimen/webfont_size"
+                android:contentDescription="@string/web"/>
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>
