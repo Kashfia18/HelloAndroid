@@ -1,80 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@drawable/background"
     tools:context="com.example.android.helloandroid.MainActivity">
 
-    <ImageView
-        android:id="@+id/uimage_view"
-        android:src="@drawable/udacityindex"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        android:layout_weight="1"
-        />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/utext_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Udacity"
-        android:textColor="@android:color/black"
-        android:layout_below="@id/uimage_view"
-        android:textSize="24sp"
-        android:fontFamily="sans-serif-light"/>
+        <ImageView
+            android:id="@+id/udacity_image"
+            android:src="@drawable/udacityindex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            />
 
-
-    <TextView
-        android:id="@+id/address1_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2465 Latham St"
-        android:textColor="@android:color/black"
-        android:layout_below="@id/utext_view"
-        android:padding="2dp"
-        android:textSize="24sp"
-        android:fontFamily="sans-serif-light"
-        />
-
-    <TextView
-        android:id="@+id/address2_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mountain View, CA 94043"
-        android:textColor="@android:color/black"
-        android:layout_below="@id/address1_view"
-        android:textSize="24sp"
-        android:fontFamily="sans-serif-light"/>
+        <TextView
+            android:id="@+id/Udacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/address1_view"
+            android:fontFamily="@font/roboto"
+            android:layout_centerHorizontal="true"
+            android:text="Udacity"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
 
 
-    <TextView
-        android:id="@+id/phoneno_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="650-555-5555"
-        android:textColor="@android:color/black"
-        android:layout_below="@id/address2_view"
-        android:padding="2dp"
-        android:textSize="24sp"
-        android:fontFamily="sans-serif-light"
-        android:autoLink="phone"
-        />
+        <TextView
+            android:id="@+id/address1_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2465 Latham St"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto"
+            android:layout_above="@id/address2_view"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            />
+
+        <TextView
+            android:id="@+id/address2_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mountain View, CA 94043"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto"
+            android:layout_above="@id/phoneno_view"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            />
 
 
-    <TextView
-        android:id="@+id/kashfia_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="www.udacity.com"
-        android:textColor="@android:color/black"
-        android:layout_below="@id/phoneno_view"
-        android:padding="2dp"
-        android:textSize="24sp"
-        android:fontFamily="sans-serif-light"
-        android:autoLink="web"/>
+        <TextView
+            android:id="@+id/phoneno_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="650-555-5555"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto"
+            android:autoLink="phone"
+            android:layout_above="@id/web_view"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"
+            />
 
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/web_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.udacity.com"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto"
+            android:autoLink="web"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/button_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Free Trial"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</ScrollView>
