@@ -1,100 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:focusable="true"
     android:background="@drawable/background"
+    android:focusable="true"
     tools:context="com.example.android.helloandroid.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:focusable="true">
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="@bool/button_parent_Right"
             android:layout_alignParentTop="@bool/button_parent_top"
             android:layout_marginRight="@dimen/buttondistance_from_rightmargin"
+            android:contentDescription="@string/des_button"
             android:fontFamily="@font/roboto"
             android:padding="@dimen/buttonpadding_size"
             android:text="@string/button"
             android:textSize="@dimen/buttonfont_size"
-            android:textStyle="bold"
-            android:contentDescription="@string/des_button"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:focusable="true">
+            android:focusable="true"
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/image"
                 android:scaleType="centerCrop"
-                android:src="@drawable/udacityindex"
-                android:contentDescription="@string/image"/>
+                android:src="@drawable/udacityindex" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/firsttext_marginTop"
-                android:fontFamily="@font/roboto"
-                android:text="@string/Udacity_text"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/font_size"
-                android:textStyle="bold"
-                android:contentDescription="@string/Udacity_text"/>
+                android:layout_marginLeft="@dimen/textview_minutepadding"
+                android:layout_marginTop="@dimen/firsttextviewdistance_fromTop"
+                android:contentDescription="@string/address"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:drawablePadding="@dimen/icon_textpadding"
+                android:gravity="start"
+                android:text="@string/address"
+                android:textAppearance="@style/CodeFont" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/roboto"
-                android:paddingTop="@dimen/textview_paddingTop"
-                android:text="@string/address1"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/font_size"
-                android:contentDescription="@string/address1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/roboto"
-                android:text="@string/address2"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/font_size"
-                android:contentDescription="@string/address2"/>
-
-            <TextView
-                android:id="@+id/phoneno_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:autoLink="phone"
-                android:fontFamily="@font/roboto"
+                android:contentDescription="@string/telephone_no"
+                android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                android:drawablePadding="@dimen/icon_textpadding"
+                android:gravity="start"
                 android:padding="@dimen/textview_minutepadding"
                 android:text="@string/phone_no"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/font_size"
-                android:contentDescription="@string/telephone_no" />
+                android:textAppearance="@style/CodeFont" />
 
             <TextView
-                android:id="@+id/web_view"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/webicon_leftmargin"
                 android:autoLink="web"
-                android:fontFamily="@font/roboto"
+                android:contentDescription="@string/web"
+                android:drawableLeft="@drawable/ic_web_black_24dp"
+                android:drawablePadding="@dimen/icon_textpadding"
+                android:gravity="start"
                 android:text="@string/web"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/webfont_size"
-                android:contentDescription="@string/web"/>
+                android:textAppearance="@style/CodeFont" />
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>

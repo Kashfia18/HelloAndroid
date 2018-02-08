@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="firsttext_marginTop">70dp</dimen>
+    <dimen name="firsttextviewdistance_fromTop">140dp</dimen>
     <dimen name="textview_paddingTop">16dp</dimen>
     <dimen name="textview_minutepadding">8dp</dimen>
+    <dimen name="icon_textpadding">10dp</dimen>
+    <dimen name="webicon_leftmargin">10dp</dimen>
     <dimen name="buttonpadding_size">16dp</dimen>
     <dimen name="buttondistance_from_rightmargin">8dp</dimen>
-    <dimen name="font_size">24sp</dimen>
-    <dimen name="webfont_size">20sp</dimen>
     <dimen name="buttonfont_size">16sp</dimen>
 
 </resources>
-
