@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="firsttextviewdistance_fromTop">140dp</dimen>
+    <dimen name="firsttextviewdistance_fromTop">110dp</dimen>
     <dimen name="textview_paddingTop">16dp</dimen>
     <dimen name="textview_minutepadding">8dp</dimen>
     <dimen name="icon_textpadding">10dp</dimen>

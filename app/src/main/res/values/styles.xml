@@ -8,10 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
+    <style name="CodeFont" parent="@android:style/TextAppearance">
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">24sp</item>
     </style>
 
+    <style name="CodeFont.16sp" >
+        <item name="android:textSize">16sp</item>
+    </style>
 
 </resources>
