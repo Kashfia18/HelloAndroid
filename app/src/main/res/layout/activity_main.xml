@@ -19,10 +19,9 @@
             android:layout_alignParentTop="@bool/button_parent_top"
             android:layout_marginRight="@dimen/buttondistance_from_rightmargin"
             android:contentDescription="@string/des_button"
+            android:padding="@dimen/buttonpadding_size"
             android:text="@string/button"
-            android:textStyle="bold"
-            android:textAppearance="@style/CodeFont.16sp"
-            android:padding="@dimen/buttonpadding_size"/>
+            android:textAppearance="@style/CodeFont.16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
